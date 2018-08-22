@@ -55,6 +55,7 @@ html, body {
 .aligncenter {
   margin-left: auto;
   margin-right: auto;
+  padding: 0 20px;
   display: block;
   clear: both;
 }
@@ -191,6 +192,21 @@ input {
 
 /* Buttons Configuration */
 
+.btn-social {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  margin: 0 6px;
+  padding: 0;
+}
+
+.btn-social:hover {
+  color: darkgray;
+}
+
 .btn-conf {
   border-radius: 50px;
   margin-right: 15px;
@@ -201,6 +217,7 @@ input {
 }
 
 .btn-theme {
+  cursor: pointer;
   background: #762c3e;
   color: white
 }
@@ -255,6 +272,24 @@ hr {
   -webkit-transform: translate3d(-50%, -50%, 0);
   transform: translate3d(-50%, -50%, 0);
   font-size: 18px;
+}
+
+.album-cover {
+  position: absolute;
+  margin: 0;
+  padding: 180px 0 0 0;
+  color: #f9f1e9;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  font-size: 18px;
+
+  width: 300px;
+  height: 300px;
+  background-image: url('../img/album.jpg');
+  background-size: cover;
 }
 
 .intro .main-title {
@@ -478,7 +513,7 @@ nm {
 }
 
 .contact-form .form-send button  {
-  background: #f7ca18;
+  background: #762c3e;
   border: 0;
   padding: 10px 30px;
   color: #fff;
